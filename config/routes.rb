@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get "/segment_params/:this_is_a_variable/:hot_dog" => "params_examples#segment_params"
   get "/game/:variable1/:variable2" => "params_examples#game"
   get "/guess_query/:the_users_guess" => "params_example#guess_query"
-
+  
+  post "/body_params" => "params#body_params"
 end

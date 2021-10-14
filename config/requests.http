@@ -1,7 +1,6 @@
-POST http://localhost:3000/secret.json
+POST http://localhost:3000/body_params.json
 content-type: application/json
 
-
 {
-  "secret": "hello"
+  "secret_info": "hello"
 }
