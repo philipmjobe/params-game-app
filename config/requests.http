@@ -1,0 +1,7 @@
+POST http://localhost:3000/secret.json
+content-type: application/json
+
+
+{
+  "secret": "hello"
+}

@@ -14,4 +14,17 @@ class ParamsController < ApplicationController
     sum = num1 + num2
     render json: {message: "The total is #{sum}"}
   end
+
+  def guess_query
+    winning_number = 32
+    input_guess = params["the_users_guess"].to_i
+    if input_guess > winning_number
+      output_message = "Guess lower!"
+    elsif input_guess < winning_number
+      output_message = "Guess higer!"
+    else  
+      output_message = "Good job!"
+    end
+    render json: {message: output_message}
+  end 
 end
